@@ -4,19 +4,6 @@
   <title>Game Defender</title>
 </head>
 <body>
-  <img src="https://cdn.discordapp.com/attachments/1111610343458877460/1111936962060894249/gamedefender.jpg" alt="Game Defender">
-
-  <div style="background-color: orange; padding: 10px;">
-    <span style="color: white; font-weight: bold;">Bukkit 1.12.2</span>
-  </div>
-
-  <div style="background-color: green; padding: 10px;">
-    <span style="color: white; font-weight: bold;">API</span>
-  </div>
-
-  <div style="background-color: blue; padding: 10px;">
-    <span style="color: white; font-weight: bold;">JAVA</span>
-  </div>
 
   <hr>
 
